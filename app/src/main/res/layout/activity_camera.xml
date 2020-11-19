@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+
+
+    <Button
+        android:id="@+id/captureImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="take"
+        />
+
+    <au.edu.sydney.comp5216.assignment2.SquareImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        />
+
+    <Button
+        android:id="@+id/flipCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="flip"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <au.edu.sydney.comp5216.assignment2.SquareImageView
+        android:id="@+id/grid_square_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </au.edu.sydney.comp5216.assignment2.SquareImageView>
+    <ImageView
+        android:id="@+id/cloud_image"
+        android:layout_width="40dp"
+        android:background="#6da56f"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        ></ImageView>
+    <TextView
+    android:id="@+id/grid_text"
+    android:layout_width="match_parent"
+    android:background="#000000"
+    android:textColor="#ffffff"
+    android:layout_height="30dp"
+    android:layout_alignBottom="@id/grid_square_view"
+    >
+
+
+
+    </TextView>
+</RelativeLayout>

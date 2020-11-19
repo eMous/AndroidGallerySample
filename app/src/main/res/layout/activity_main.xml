@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="150dp"
+        android:gravity="center"
+        android:horizontalSpacing="20dp"
+        android:numColumns="auto_fit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></GridView>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Main content -->
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floating_photo_view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="10dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_plus_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sync_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_margin="10dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_autorenew_24" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/delete_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_margin="10dp"
+            app:backgroundTint="#FF0000"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
